@@ -11,7 +11,10 @@ namespace SummaMove
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
-            // Registratie scherm openen
+            MainWindow window = new MainWindow();
+            window.Show();
+
+            this.Close();
         }
     }
 }

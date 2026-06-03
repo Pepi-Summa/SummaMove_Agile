@@ -23,7 +23,11 @@ namespace SummaMove
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            LoginWindow window = new LoginWindow();
+            window.Show();
 
+            this.Close();
+        
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
