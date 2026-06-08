@@ -31,17 +31,7 @@
                 HorizontalAlignment="Center"
                 Margin="0,0,0,50">
 
-                <TextBlock
-                    Text="SUMMA"
-                    FontSize="34"
-                    FontWeight="Bold"
-                    Foreground="#3B00B9"/>
-
-                <TextBlock
-                    Text="Move"
-                    FontSize="34"
-                    FontWeight="Bold"
-                    Foreground="#FF1493"/>
+                <Image Source="/Summa_Move2_transparant.png" Height="300"/>
 
             </StackPanel>
 
