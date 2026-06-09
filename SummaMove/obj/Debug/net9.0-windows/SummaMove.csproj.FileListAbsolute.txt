@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 C:\Users\Pepijn\source\repos\SummaMove\SummaMove\obj\Debug\net9.0-windows\MainWindow.g.cs
 C:\Users\Pepijn\source\repos\SummaMove\SummaMove\obj\Debug\net9.0-windows\Window1.g.cs
 C:\Users\Pepijn\source\repos\SummaMove\SummaMove\obj\Debug\net9.0-windows\App.g.cs
@@ -21,3 +22,10 @@ C:\Users\Pepijn\source\repos\SummaMove\SummaMove\obj\Debug\net9.0-windows\refint
 C:\Users\Pepijn\source\repos\SummaMove\SummaMove\obj\Debug\net9.0-windows\SummaMove.pdb
 C:\Users\Pepijn\source\repos\SummaMove\SummaMove\obj\Debug\net9.0-windows\SummaMove.genruntimeconfig.cache
 C:\Users\Pepijn\source\repos\SummaMove\SummaMove\obj\Debug\net9.0-windows\ref\SummaMove.dll
+=======
+C:\Users\hodan\OneDrive - Summacollege O365\Portfolio_Project_Hodan SummaMove\SummaMove_Agile\SummaMove\obj\Debug\net9.0-windows\MainWindow.g.cs
+C:\Users\hodan\OneDrive - Summacollege O365\Portfolio_Project_Hodan SummaMove\SummaMove_Agile\SummaMove\obj\Debug\net9.0-windows\Window1.g.cs
+C:\Users\hodan\OneDrive - Summacollege O365\Portfolio_Project_Hodan SummaMove\SummaMove_Agile\SummaMove\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\hodan\OneDrive - Summacollege O365\Portfolio_Project_Hodan SummaMove\SummaMove_Agile\SummaMove\obj\Debug\net9.0-windows\SummaMove_MarkupCompile.cache
+C:\Users\hodan\OneDrive - Summacollege O365\Portfolio_Project_Hodan SummaMove\SummaMove_Agile\SummaMove\obj\Debug\net9.0-windows\SummaMove_MarkupCompile.lref
+>>>>>>> Stashed changes

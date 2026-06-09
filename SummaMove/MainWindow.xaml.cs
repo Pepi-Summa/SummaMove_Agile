@@ -20,7 +20,14 @@ namespace SummaMove
         {
             InitializeComponent();
         }
+        private void Button_click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
 
+<<<<<<< Updated upstream
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
             LoginWindow window = new LoginWindow();
@@ -33,6 +40,8 @@ namespace SummaMove
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+=======
+>>>>>>> Stashed changes
         }
     }
 }

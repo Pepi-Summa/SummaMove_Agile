@@ -10,57 +10,57 @@
         Width="720"
         WindowStartupLocation="CenterScreen">
 
-    <Grid>
+	<Grid>
 
-        <!-- Achtergrond afbeelding -->
-        <Image Source="/Sport Wallpaper.jpg"
+		<!-- Achtergrond afbeelding -->
+		<Image Source="/Sport Wallpaper.jpg"
                Stretch="UniformToFill"/>
 
-        <!-- Overlay -->
-        <Rectangle Fill="#8A9395"
+		<!-- Overlay -->
+		<Rectangle Fill="#8A9395"
                    Opacity="0.8"/>
 
-        <!-- Hoofdcontainer -->
-        <StackPanel
+		<!-- Hoofdcontainer -->
+		<StackPanel
             VerticalAlignment="Top"
             Margin="70,80,70,0">
 
-            <!-- Logo -->
-            <StackPanel
+			<!-- Logo -->
+			<StackPanel
                 Orientation="Horizontal"
                 HorizontalAlignment="Center"
                 Margin="0,0,0,40">
 
-                <TextBlock
+				<TextBlock
                     Text="SUMMA"
                     FontSize="34"
                     FontWeight="Bold"
                     Foreground="#3B00B9" />
 
-                <TextBlock
+				<TextBlock
                     Text="Move"
                     FontSize="34"
                     FontWeight="Bold"
                     Foreground="#FF1493" />
 
-            </StackPanel>
+			</StackPanel>
 
-            <!-- Welkom -->
-            <TextBlock
+			<!-- Welkom -->
+			<TextBlock
                 Text="Welkom!"
                 FontSize="32"
                 Foreground="White"
                 HorizontalAlignment="Center"
                 Margin="0,0,0,40" />
 
-            <!-- Gebruikersnaam -->
-            <TextBlock
+			<!-- Gebruikersnaam -->
+			<TextBlock
                 Text="Gebruikersnaam"
                 FontSize="20"
                 Foreground="White"
                 Margin="0,0,0,10" />
 
-            <TextBox
+			<TextBox
                 Height="50"
                 FontSize="18"
                 Background="White"
@@ -68,14 +68,14 @@
                 BorderThickness="0"
                 Margin="0,0,0,25" />
 
-            <!-- Email -->
-            <TextBlock
+			<!-- Email -->
+			<TextBlock
                 Text="Email"
                 FontSize="20"
                 Foreground="White"
                 Margin="0,0,0,10" />
 
-            <TextBox
+			<TextBox
                 Height="50"
                 FontSize="18"
                 Background="White"
@@ -83,14 +83,14 @@
                 BorderThickness="0"
                 Margin="0,0,0,25" />
 
-            <!-- Wachtwoord -->
-            <TextBlock
+			<!-- Wachtwoord -->
+			<TextBlock
                 Text="Wachtwoord"
                 FontSize="20"
                 Foreground="White"
                 Margin="0,0,0,10" />
 
-            <PasswordBox
+			<PasswordBox
                 Height="50"
                 FontSize="18"
                 Background="White"
@@ -98,14 +98,14 @@
                 BorderThickness="0"
                 Margin="0,0,0,25" />
 
-            <!-- Bevestig wachtwoord -->
-            <TextBlock
+			<!-- Bevestig wachtwoord -->
+			<TextBlock
                 Text="Bevestig Wachtwoord"
                 FontSize="20"
                 Foreground="White"
                 Margin="0,0,0,10" />
 
-            <PasswordBox
+			<PasswordBox
                 Height="50"
                 FontSize="18"
                 Background="White"
@@ -113,8 +113,8 @@
                 BorderThickness="0"
                 Margin="0,0,0,40" />
 
-            <!-- Account knop -->
-            <Button
+			<!-- Account knop -->
+			<Button
                 Content="Maak account"
                 Height="70"
                 Background="#3B00B9"
@@ -125,8 +125,8 @@
                 Cursor="Hand"
                 Margin="0,0,0,20" Click="Button_Click" />
 
-            <!-- Login tekst -->
-            <Button Content="Ik heb al een account"
+			<!-- Login tekst -->
+			<Button Content="Ik heb al een account"
         FontSize="18"
         Foreground="White"
         Background="Transparent"
@@ -134,8 +134,8 @@
         HorizontalAlignment="Left"
         Cursor="Hand"
         Click="LoginButton_Click"/>
-        </StackPanel>
+		</StackPanel>
 
-    </Grid>
+	</Grid>
 
 </Window>

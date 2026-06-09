@@ -8,6 +8,7 @@ namespace SummaMove
         {
             InitializeComponent();
         }
+<<<<<<< Updated upstream
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
@@ -15,6 +16,11 @@ namespace SummaMove
             window.Show();
 
             this.Close();
+=======
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+
+>>>>>>> Stashed changes
         }
     }
 }

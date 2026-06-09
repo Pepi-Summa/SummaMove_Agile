@@ -10,71 +10,71 @@
         Width="720"
         WindowStartupLocation="CenterScreen">
 
-    <Grid>
+	<Grid>
 
-        <!-- Achtergrond -->
-        <Image Source="/Sport Wallpaper.jpg"
+		<!-- Achtergrond -->
+		<Image Source="/Sport Wallpaper.jpg"
                Stretch="UniformToFill"/>
 
-        <!-- Overlay -->
-        <Rectangle Fill="#8A9395"
+		<!-- Overlay -->
+		<Rectangle Fill="#8A9395"
                    Opacity="0.8"/>
 
-        <!-- Content -->
-        <StackPanel
+		<!-- Content -->
+		<StackPanel
             VerticalAlignment="Center"
             Margin="70">
 
-            <!-- Logo -->
-            <StackPanel
+			<!-- Logo -->
+			<StackPanel
                 Orientation="Horizontal"
                 HorizontalAlignment="Center"
                 Margin="0,0,0,50">
 
-                <TextBlock
+				<TextBlock
                     Text="SUMMA"
                     FontSize="34"
                     FontWeight="Bold"
                     Foreground="#3B00B9"/>
 
-                <TextBlock
+				<TextBlock
                     Text="Move"
                     FontSize="34"
                     FontWeight="Bold"
                     Foreground="#FF1493"/>
 
-            </StackPanel>
+			</StackPanel>
 
-            <!-- Titel -->
-            <TextBlock
+			<!-- Titel -->
+			<TextBlock
                 Text="Log in"
                 FontSize="32"
                 Foreground="White"
                 HorizontalAlignment="Center"
                 Margin="0,0,0,40"/>
 
-            <!-- Email -->
-            <TextBlock
+			<!-- Email -->
+			<TextBlock
                 Text="Email"
                 FontSize="20"
                 Foreground="White"
                 Margin="0,0,0,10"/>
-            <TextBox
-                Height="50"
-                FontSize="18"
-                Background="White"
-                Foreground="Black"
-                BorderThickness="0"
-                Margin="0,0,0,25"/>
+			<TextBox
+							Height="50"
+							FontSize="18"
+							Background="White"
+							Foreground="Black"
+							BorderThickness="0"
+							Margin="0,0,0,25"/>
 
-            <!-- Wachtwoord -->
-            <TextBlock
+			<!-- Wachtwoord -->
+			<TextBlock
                 Text="Wachtwoord"
                 FontSize="20"
                 Foreground="White"
                 Margin="0,0,0,10"/>
 
-            <PasswordBox
+			<PasswordBox
                 Height="50"
                 FontSize="18"
                 Background="White"
@@ -82,8 +82,8 @@
                 BorderThickness="0"
                 Margin="0,0,0,40"/>
 
-            <!-- Login knop -->
-            <Button
+			<!-- Login knop -->
+			<Button
                 Content="Inloggen"
                 Height="70"
                 Background="#3B00B9"
@@ -94,8 +94,8 @@
                 Cursor="Hand"
                 Margin="0,0,0,20"/>
 
-            <!-- Register link -->
-            <Button Content="Nog geen account?"
+			<!-- Register link -->
+			<Button Content="Nog geen account?"
         Background="Transparent"
         BorderThickness="0"
         Foreground="White"
@@ -104,8 +104,8 @@
         Cursor="Hand"
         Click="RegisterButton_Click"/>
 
-        </StackPanel>
+		</StackPanel>
 
-    </Grid>
+	</Grid>
 
 </Window>
