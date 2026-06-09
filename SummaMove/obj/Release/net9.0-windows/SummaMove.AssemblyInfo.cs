@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SummaMove")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88234b0db2d57e640e6273963bfea6ac9a6eee18")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36cd34dd58f20ff5d71e58305e6c506971b4aeda")]
 [assembly: System.Reflection.AssemblyProductAttribute("SummaMove")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SummaMove")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

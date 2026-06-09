@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SummaMove")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8eefbc73d3c0d9d8e9664e685898f47fd3b8eb4c")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88234b0db2d57e640e6273963bfea6ac9a6eee18")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36cd34dd58f20ff5d71e58305e6c506971b4aeda")]
 [assembly: System.Reflection.AssemblyProductAttribute("SummaMove")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SummaMove")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
