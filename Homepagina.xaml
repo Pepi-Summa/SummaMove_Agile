@@ -27,7 +27,7 @@
             </Grid.ColumnDefinitions>
 
             <!-- Logo -->
-            <Image Source="/Summa_Move2_transparant.png"
+            <Image Source="Summa_Move2_transparant.png"
                    Width="150"
                    Margin="15,0,0,0"
                    VerticalAlignment="Center"
