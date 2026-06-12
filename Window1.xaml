@@ -6,104 +6,113 @@
         xmlns:local="clr-namespace:SummaMove"
         mc:Ignorable="d"
         Title="Registreren"
-        Height="1280"
-        Width="720"
+        Height="820"
+        Width="550"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize">
 
     <Grid>
 
-        <!-- Achtergrond -->
+        <!-- Achtergrond (fixed) -->
         <Image Source="/Sport Wallpaper.jpg"
                Stretch="UniformToFill"/>
 
-        <!-- Overlay -->
+        <!-- Overlay (fixed) -->
         <Rectangle Fill="#B3FFFFFF"/>
 
-        <!-- Content -->
-        <StackPanel Width="420"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Top"
-                    Margin="0,80,0,0">
+        <!-- Scrollbare content -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto"
+                       HorizontalScrollBarVisibility="Disabled">
 
-            <!-- Logo -->
-            <Image Source="/Summa_Move2_transparant.png"
-                   Width="220"
-                   Height="300"
-                   Stretch="Uniform"
-                   HorizontalAlignment="Center"
-                   Margin="0,0,0,30"/>
+            <Grid>
 
-            <!-- Titel -->
-            <TextBlock Text="Welkom!"
-                       FontSize="32"
-                       HorizontalAlignment="Center"
-                       Margin="0,0,0,40"/>
+                <StackPanel Width="420"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top"
+                            Margin="0,80,0,40">
 
-            <!-- Gebruikersnaam -->
-            <TextBlock Text="Gebruikersnaam"
-                       FontSize="18"
-                       Margin="0,0,0,8"/>
+                    <!-- Logo -->
+                    <Image Source="/Summa_Move2_transparant.png"
+                           Width="220"
+                           Height="300"
+                           Stretch="Uniform"
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,30"/>
 
-            <TextBox Height="50"
-                     FontSize="18"
-                     Background="White"
-                     BorderBrush="#DDDDDD"
-                     Margin="0,0,0,25"/>
+                    <!-- Titel -->
+                    <TextBlock Text="Welkom!"
+                               FontSize="32"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,40"/>
 
-            <!-- Email -->
-            <TextBlock Text="Email"
-                       FontSize="18"
-                       Margin="0,0,0,8"/>
+                    <!-- Gebruikersnaam -->
+                    <TextBlock Text="Gebruikersnaam"
+                               FontSize="18"
+                               Margin="0,0,0,8"/>
 
-            <TextBox Height="50"
-                     FontSize="18"
-                     Background="White"
-                     BorderBrush="#DDDDDD"
-                     Margin="0,0,0,25"/>
+                    <TextBox Height="50"
+                             FontSize="18"
+                             Background="White"
+                             BorderBrush="#DDDDDD"
+                             Margin="0,0,0,25"/>
 
-            <!-- Wachtwoord -->
-            <TextBlock Text="Wachtwoord"
-                       FontSize="18"
-                       Margin="0,0,0,8"/>
+                    <!-- Email -->
+                    <TextBlock Text="Email"
+                               FontSize="18"
+                               Margin="0,0,0,8"/>
 
-            <PasswordBox Height="50"
-                         FontSize="18"
-                         Background="White"
-                         BorderBrush="#DDDDDD"
-                         Margin="0,0,0,25"/>
+                    <TextBox Height="50"
+                             FontSize="18"
+                             Background="White"
+                             BorderBrush="#DDDDDD"
+                             Margin="0,0,0,25"/>
 
-            <!-- Bevestigen -->
-            <TextBlock Text="Bevestig Wachtwoord"
-                       FontSize="18"
-                       Margin="0,0,0,8"/>
+                    <!-- Wachtwoord -->
+                    <TextBlock Text="Wachtwoord"
+                               FontSize="18"
+                               Margin="0,0,0,8"/>
 
-            <PasswordBox Height="50"
-                         FontSize="18"
-                         Background="White"
-                         BorderBrush="#DDDDDD"
-                         Margin="0,0,0,40"/>
+                    <PasswordBox Height="50"
+                                 FontSize="18"
+                                 Background="White"
+                                 BorderBrush="#DDDDDD"
+                                 Margin="0,0,0,25"/>
 
-            <!-- Registreren -->
-            <Button Content="Maak account"
-                    Height="70"
-                    FontSize="28"
-                    FontWeight="Bold"
-                    Foreground="White"
-                    Background="#3D18B8"
-                    BorderThickness="0"
-                    Cursor="Hand"
-                    Margin="0,0,0,15"/>
+                    <!-- Bevestigen -->
+                    <TextBlock Text="Bevestig Wachtwoord"
+                               FontSize="18"
+                               Margin="0,0,0,8"/>
 
-            <!-- Login -->
-            <Button Content="Ik heb al een account"
-                    Background="Transparent"
-                    BorderThickness="0"
-                    FontSize="16"
-                    HorizontalAlignment="Left"
-                    Cursor="Hand"/>
+                    <PasswordBox Height="50"
+                                 FontSize="18"
+                                 Background="White"
+                                 BorderBrush="#DDDDDD"
+                                 Margin="0,0,0,40"/>
 
-        </StackPanel>
+                    <!-- Registreren knop -->
+                    <Button Content="Maak account"
+                            Height="70"
+                            FontSize="28"
+                            FontWeight="Bold"
+                            Foreground="White"
+                            Background="#3D18B8"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Margin="0,0,0,15"/>
+
+                    <!-- Login knop -->
+                    <Button Content="Ik heb al een account"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            FontSize="16"
+                            HorizontalAlignment="Left"
+                            Cursor="Hand"/>
+
+                </StackPanel>
+
+            </Grid>
+
+        </ScrollViewer>
 
     </Grid>
 </Window>
