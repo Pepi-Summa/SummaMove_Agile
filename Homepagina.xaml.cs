@@ -35,17 +35,7 @@ namespace SummaMove
 
         private void LoadChallenges()
         {
-            var challenges = db.GetChallenges();
-
-            ChallengesList.Items.Clear();
-
-            foreach (var challenge in challenges)
-            {
-                ChallengesList.Items.Add(
-                    $"{challenge.Name} | " +
-                    $"{challenge.Difficulty} | " +
-                    $"{challenge.PointReward} punten");
-            }
+            ChallengesList.ItemsSource = db.GetChallenges();
         }
 
         private void StartChallenge_Click(object sender, RoutedEventArgs e)
@@ -58,6 +48,8 @@ namespace SummaMove
 
             MessageBox.Show("Challenge gestart!");
         }
+
+
 
     }
 }

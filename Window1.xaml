@@ -102,6 +102,7 @@
 
                     <!-- Login knop -->
                     <Button Content="Ik heb al een account"
+                            Click="Button_Click"
                             Background="Transparent"
                             BorderThickness="0"
                             FontSize="16"
