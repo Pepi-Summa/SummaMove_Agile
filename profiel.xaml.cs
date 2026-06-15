@@ -14,20 +14,9 @@ using System.Windows.Shapes;
 
 namespace SummaMove
 {
-    /// <summary>
-<<<<<<<< HEAD:SummaMove/Homepagina.xaml.cs
-    /// Interaction logic for Homepagina.xaml
-    /// </summary>
-    public partial class Homepagina : Window
-    {
-        public Homepagina()
-========
-    /// Interaction logic for profiel.xaml
-    /// </summary>
     public partial class profiel : Window
     {
         public profiel()
->>>>>>>> 4c23719bcec54bca54377cfa9b879812a7fe86c2:profiel.xaml.cs
         {
             InitializeComponent();
         }
