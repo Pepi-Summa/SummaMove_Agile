@@ -175,14 +175,26 @@
 
                                     <!-- Button -->
 
-                                    <Button Grid.Row="3"
-                                            Content="Start Challenge"
+                                    <StackPanel Grid.Row="3"
+                                    Orientation="Horizontal"
+                                    HorizontalAlignment="Center"
+                                    Margin="0,20,0,0">
+
+                                        <Button Content="Start Challenge"
+                                            Width="160"
                                             Height="40"
-                                            Width="180"
-                                            Margin="0,20,0,0"
-                                            HorizontalAlignment="Center"
+                                            Margin="5"
                                             Tag="{Binding Id}"
                                             Click="StartChallenge_Click"/>
+
+                                        <Button Content="Voltooi Challenge"
+                                             Width="160"
+                                             Height="40"
+                                             Margin="5"
+                                             Tag="{Binding Id}"
+                                             Click="CompleteChallenge_Click"/>
+
+                                    </StackPanel>
 
                                 </Grid>
 

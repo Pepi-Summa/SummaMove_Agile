@@ -22,8 +22,9 @@ namespace SummaMove
     /// </summary>
     public partial class Homepagina : Window
     {
+        private string connStr ="server=localhost;user=root;password=;database=summamovedatabase;";
         private DatabaseManager db = new();
-        private int currentUserId = 1;
+        private int currentUserId = 1; /// testaccount om aan de klant te tonen
 
         public Homepagina()
         {
@@ -49,7 +50,47 @@ namespace SummaMove
             MessageBox.Show("Challenge gestart!");
         }
 
+        private void CompleteChallenge_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Button button = (Button)sender;
 
+                MessageBox.Show($"Tag = {button.Tag}");
+
+                int challengeId = Convert.ToInt32(button.Tag);
+
+                db.CompleteChallenge(currentUserId, challengeId);
+
+                MessageBox.Show("Challenge voltooid!");
+
+                LoadChallenges();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private int GetUserPoints()
+        {
+            using (MySqlConnection conn =
+                new MySqlConnection(
+                "server=localhost;user=root;password=;database=summamovedatabase;"))
+            {
+                conn.Open();
+
+                string query =
+                    "SELECT points FROM users WHERE id = @id";
+
+                MySqlCommand cmd =
+                    new MySqlCommand(query, conn);
+
+                cmd.Parameters.AddWithValue("@id", currentUserId);
+
+                return Convert.ToInt32(cmd.ExecuteScalar());
+            }
+        }
 
     }
 }
