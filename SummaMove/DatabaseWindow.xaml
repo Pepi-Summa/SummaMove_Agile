@@ -1,0 +1,120 @@
+﻿<Window x:Class="SummaMove.DatabaseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Database Viewer"
+        Height="700"
+        Width="1200">
+
+    <Grid Margin="10">
+
+        <TabControl>
+
+            <TabItem Header="Users">
+                <DataGrid x:Name="UsersGrid"/>
+            </TabItem>
+
+            <TabItem Header="Challenges">
+                <DataGrid x:Name="ChallengesGrid"/>
+            </TabItem>
+
+            <TabItem Header="User Challenges">
+                <DataGrid x:Name="UserChallengesGrid"/>
+            </TabItem>
+
+            <TabItem Header="Friends">
+                <DataGrid x:Name="FriendsGrid"/>
+            </TabItem>
+
+            <TabItem Header="Leaderboard">
+                <DataGrid x:Name="LeaderboardGrid"/>
+            </TabItem>
+
+            <TabItem Header="Store Items">
+                <DataGrid x:Name="StoreItemsGrid"/>
+            </TabItem>
+
+            <TabItem Header="User Items">
+                <DataGrid x:Name="UserItemsGrid"/>
+            </TabItem>
+
+            <!-- NIEUWE TAB -->
+            <TabItem Header="Add Challenge">
+
+                <StackPanel Margin="20">
+
+                    <TextBlock Text="Difficulty"
+                   Margin="0,10,0,5"/>
+
+                    <ComboBox x:Name="DifficultyBox"
+                  Margin="0,0,0,15">
+
+                        <ComboBoxItem Content="Easy"/>
+                        <ComboBoxItem Content="Medium"/>
+                        <ComboBoxItem Content="Hard"/>
+
+                    </ComboBox>
+
+                    <TextBlock Text="Name"
+                   Margin="0,10,0,5"/>
+
+                    <TextBox x:Name="ChallengeNameBox"
+                 Margin="0,0,0,15"/>
+
+                    <TextBlock Text="Description"
+                   Margin="0,10,0,5"/>
+
+                    <TextBox x:Name="ChallengeDescriptionBox"
+                 Margin="0,0,0,15"/>
+
+                    <TextBlock Text="Point Reward"
+                   Margin="0,10,0,5"/>
+
+                    <TextBox x:Name="ChallengeRewardBox"
+                 Margin="0,0,0,20"/>
+
+                    <Button Content="Add Challenge"
+                Width="150"
+                Height="35"
+                Click="AddChallenge_Click"/>
+
+                </StackPanel>
+
+            </TabItem>
+
+            <!-- NIEUWE TAB -->
+            <TabItem Header="Add Store Item">
+
+                <StackPanel Margin="20">
+
+                    <TextBlock Text="Item Name"
+                   Margin="0,10,0,5"/>
+
+                    <TextBox x:Name="StoreItemNameBox"
+                 Margin="0,0,0,15"/>
+
+                    <TextBlock Text="Product Type"
+                   Margin="0,10,0,5"/>
+
+                    <ComboBox x:Name="ProductTypeBox"
+                  Margin="0,0,0,20">
+
+                        <ComboBoxItem Content="BG theme"/>
+                        <ComboBoxItem Content="Lettertype"/>
+                        <ComboBoxItem Content="Player Title"/>
+
+                    </ComboBox>
+
+                    <Button Content="Add Store Item"
+                Width="150"
+                Height="35"
+                Click="AddStoreItem_Click"/>
+
+                </StackPanel>
+
+            </TabItem>
+
+        </TabControl>
+
+
+    </Grid>
+</Window>
