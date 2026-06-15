@@ -30,13 +30,14 @@ namespace SummaMove
         {
             InitializeComponent();
 
+            LoadUserInfo();     // 🔴 auto login user 1
             LoadChallenges();
         }
 
 
         private void LoadChallenges()
         {
-            ChallengesList.ItemsSource = db.GetChallenges();
+            ChallengesList.ItemsSource = db.GetChallenges(currentUserId);
         }
 
         private void StartChallenge_Click(object sender, RoutedEventArgs e)
@@ -69,6 +70,26 @@ namespace SummaMove
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void LoadUserInfo()
+        {
+            using (MySqlConnection conn = new MySqlConnection(connStr))
+            {
+                conn.Open();
+
+                string query = "SELECT username, points FROM users WHERE id = 1";
+
+                using MySqlCommand cmd = new MySqlCommand(query, conn);
+
+                using MySqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    UsernameText.Text = reader["username"].ToString();
+                    PointsText.Text = $"{reader["points"]} Punten";
+                }
             }
         }
 

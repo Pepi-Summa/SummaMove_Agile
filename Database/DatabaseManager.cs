@@ -15,18 +15,28 @@ namespace SummaMove.Database
             return new MySqlConnection(connStr);
         }
 
-        public List<Challenge> GetChallenges()
+        public List<Challenge> GetChallenges(int userId)
         {
             List<Challenge> challenges = new();
 
-            using (var conn = CreateConnection())
+            using (MySqlConnection conn = new MySqlConnection(connStr))
             {
                 conn.Open();
 
-                string query = "SELECT * FROM challenges LIMIT 3";
+                string query = @"
+            SELECT c.*
+            FROM challenges c
+            WHERE c.id NOT IN (
+                SELECT challenge_id
+                FROM user_challenges
+                WHERE user_id = @userId
+                AND completed = true
+            )";
 
-                using var cmd = new MySqlCommand(query, conn);
-                using var reader = cmd.ExecuteReader();
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@userId", userId);
+
+                MySqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
