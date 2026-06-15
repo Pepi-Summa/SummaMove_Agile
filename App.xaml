@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:SummaMove"
              StartupUri="window1.xaml">
     <Application.Resources>
-         
+        <SolidColorBrush x:Key="PrimaryBlue" Color="#0064B4"/>
+        <SolidColorBrush x:Key="PrimaryPurple" Color="#9678DC"/>
+
+        <SolidColorBrush x:Key="HeaderGray" Color="#D9D9D9"/>
+        <SolidColorBrush x:Key="BackgroundGray" Color="#BCBEC4"/>
+        <SolidColorBrush x:Key="CardGray" Color="#ECECEC"/>
     </Application.Resources>
 </Application>

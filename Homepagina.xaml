@@ -4,7 +4,9 @@
         Title="Homepagina"
         Height="1280"
         Width="720"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:SummaMove">
+    
 
     <Grid Background="#BCBEC4">
 
@@ -226,7 +228,9 @@
                      Height="200"/>
 
         </StackPanel>
-
+        <local:NavigationMenu Grid.Row="2"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Bottom"/>
     </Grid>
 
 </Window>

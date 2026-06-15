@@ -7,7 +7,7 @@
              d:DesignHeight="70"
              d:DesignWidth="390">
 
-    <Border Background="#CFCFCF"
+    <Border Background="{StaticResource HeaderGray}"
             Height="70">
 
         <Grid>
@@ -20,35 +20,53 @@
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
+            <!-- CHALLENGE -->
             <Button Grid.Column="0"
                     Content="🎯"
                     FontSize="22"
                     Background="Transparent"
-                    BorderThickness="0"/>
+                    BorderThickness="0"                    
+                    Foreground="{StaticResource PrimaryBlue}"
+                    Cursor="Hand"
+                    Click="ChallengeButton_Click"/>
 
+            <!-- TRASH -->
             <Button Grid.Column="1"
                     Content="🗑"
                     FontSize="22"
                     Background="Transparent"
-                    BorderThickness="0"/>
+                    BorderThickness="0"
+                    Foreground="{StaticResource PrimaryBlue}"
+                    Cursor="Hand"/>
 
+            <!-- HOME -->
             <Button Grid.Column="2"
                     Content="🏠"
                     FontSize="22"
                     Background="Transparent"
-                    BorderThickness="0"/>
+                    BorderThickness="0"
+                    Foreground="{StaticResource PrimaryBlue}"
+                    Cursor="Hand"
+                    Click="HomeButton_Click"/>
 
+            <!-- STATS -->
             <Button Grid.Column="3"
                     Content="📊"
                     FontSize="22"
                     Background="Transparent"
-                    BorderThickness="0"/>
+                    BorderThickness="0"
+                    Foreground="{StaticResource PrimaryBlue}"
+                    Cursor="Hand"/>
 
+            <!-- PROFILE -->
             <Button Grid.Column="4"
                     Content="👤"
                     FontSize="22"
                     Background="Transparent"
-                    BorderThickness="0"/>
+                    BorderThickness="0"
+                    Foreground="{StaticResource PrimaryBlue}"
+                    Cursor="Hand"
+                    Click="ProfielButton_Click"/>
 
         </Grid>
 

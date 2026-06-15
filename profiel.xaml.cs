@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace SummaMove
-{
+{ 
     public partial class profiel : Window
     {
         public profiel()
