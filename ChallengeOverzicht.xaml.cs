@@ -15,22 +15,13 @@ using System.Windows.Shapes;
 namespace SummaMove
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for ChallengeOverzicht.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class ChallengeOverzicht : Window
     {
-        public Window1()
+        public ChallengeOverzicht()
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Homepagina home = new Homepagina();
-            home.Show();
-
-            this.Close();
-        }
-
     }
 }

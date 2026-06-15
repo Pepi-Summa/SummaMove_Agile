@@ -10,27 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SummaMove
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for NavigationMenu.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class NavigationMenu : UserControl
     {
-        public Window1()
+        public NavigationMenu()
         {
             InitializeComponent();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Homepagina home = new Homepagina();
-            home.Show();
-
-            this.Close();
-        }
-
     }
 }

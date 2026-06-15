@@ -9,11 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="avatar.webp" />
     <None Remove="Sport Wallpaper.jpg" />
+    <None Remove="Summa_Move2_transparant.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="avatar.webp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Sport Wallpaper.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Summa_Move2_transparant.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

@@ -1,23 +1,22 @@
-﻿<Window x:Class="SummaMove.Window1"
+﻿<Window x:Class="SummaMove.Window2"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:SummaMove"
         mc:Ignorable="d"
-        Title="Registreren"
+        Title="Inloggen"
         Height="820"
-        Width="550"
+        Width="500"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize">
 
     <Grid>
 
-        <!-- Achtergrond (fixed) -->
+        <!-- Achtergrond (blijft vast) -->
         <Image Source="/Sport Wallpaper.jpg"
                Stretch="UniformToFill"/>
 
-        <!-- Overlay (fixed) -->
+        <!-- Overlay (blijft vast) -->
         <Rectangle Fill="#B3FFFFFF"/>
 
         <!-- Scrollbare content -->
@@ -25,7 +24,6 @@
                        HorizontalScrollBarVisibility="Disabled">
 
             <Grid>
-
                 <StackPanel Width="420"
                             HorizontalAlignment="Center"
                             VerticalAlignment="Top"
@@ -37,27 +35,16 @@
                            Height="300"
                            Stretch="Uniform"
                            HorizontalAlignment="Center"
-                           Margin="0,0,0,30"/>
+                           Margin="0,0,0,20"/>
 
                     <!-- Titel -->
-                    <TextBlock Text="Welkom!"
+                    <TextBlock Text="Welkom terug!"
                                FontSize="32"
                                HorizontalAlignment="Center"
                                Margin="0,0,0,40"/>
 
-                    <!-- Gebruikersnaam -->
-                    <TextBlock Text="Gebruikersnaam"
-                               FontSize="18"
-                               Margin="0,0,0,8"/>
-
-                    <TextBox Height="50"
-                             FontSize="18"
-                             Background="White"
-                             BorderBrush="#DDDDDD"
-                             Margin="0,0,0,25"/>
-
                     <!-- Email -->
-                    <TextBlock Text="Email"
+                    <TextBlock Text="Gebruikersnaam of Email"
                                FontSize="18"
                                Margin="0,0,0,8"/>
 
@@ -76,21 +63,10 @@
                                  FontSize="18"
                                  Background="White"
                                  BorderBrush="#DDDDDD"
-                                 Margin="0,0,0,25"/>
-
-                    <!-- Bevestigen -->
-                    <TextBlock Text="Bevestig Wachtwoord"
-                               FontSize="18"
-                               Margin="0,0,0,8"/>
-
-                    <PasswordBox Height="50"
-                                 FontSize="18"
-                                 Background="White"
-                                 BorderBrush="#DDDDDD"
                                  Margin="0,0,0,40"/>
 
-                    <!-- Registreren knop -->
-                    <Button Content="Maak account"
+                    <!-- Login knop -->
+                    <Button Content="Inloggen"
                             Height="70"
                             FontSize="28"
                             FontWeight="Bold"
@@ -100,9 +76,8 @@
                             Cursor="Hand"
                             Margin="0,0,0,15"/>
 
-                    <!-- Login knop -->
-                    <Button Content="Ik heb al een account"
-                            Click="Button_Click"
+                    <!-- Registreren -->
+                    <Button Content="Nog geen account? Registreer"
                             Background="Transparent"
                             BorderThickness="0"
                             FontSize="16"
@@ -110,7 +85,6 @@
                             Cursor="Hand"/>
 
                 </StackPanel>
-
             </Grid>
 
         </ScrollViewer>
